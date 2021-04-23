@@ -273,8 +273,9 @@ footer p{
         display: flex;
         flex-direction: column;
     }
-    header img{
-        height: 50%;
+  
+    header img {
+    height: 100px;
     }
     header .menu{
         display: flex;
