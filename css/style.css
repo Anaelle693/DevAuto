@@ -283,6 +283,9 @@ footer p{
     }
     header .menu nav{
         padding-bottom: 1em;
+    } 
+    header>.menu>nav>ul>li>a{
+        font-size:18px;
     }
     header>.menu>nav>ul>li>ul>li>a{
         font-size: 18px;
