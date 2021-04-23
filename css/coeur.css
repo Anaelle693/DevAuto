@@ -19,7 +19,16 @@ h1{
 }
 @media screen and (max-width:430px){
     #tutu{
-        height:200px;
+        height:230px;
+    }
+   #tutu p{
+        padding-top: 206px;
+        padding-left: 7px;
+        text-align: center;
+    }
+    h1{
+        padding-top: 20px;
+        margin-bottom: 24px;
     }
 }
 @media screen and (max-width: 830px){
