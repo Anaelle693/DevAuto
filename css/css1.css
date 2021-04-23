@@ -1,0 +1,66 @@
+section li{
+    color: black;
+}
+#bleu{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    background-color: rgb(15, 116, 138);
+    box-shadow: 2px 3px 4px #000;
+}
+#red{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+    background: url(../img/fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vert{
+    text-align: center;
+    margin-top: 5px;
+}
+#bleu ul li{
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+#bleu ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    margin-right: 20px;
+
+}
+#red input{
+    margin-bottom: 5px;
+}
+button{
+    border:none;
+    margin-top: 5px;
+    color: #f1f1f1;
+    background-color: #0F758C;
+    padding:2%;
+}
+button:hover{
+    animation: 3s alternate h-grow;
+    box-shadow: 2px 3px 4px #13090B;
+}
+@keyframes h-grow {
+    from { transform: translateY(50%); }
+    to   { transform: translateY(0); }
+  }
+header{
+    margin-bottom: 40px;
+}
+footer{
+    padding-top: 70px;
+}

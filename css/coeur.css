@@ -1,0 +1,28 @@
+#tutu{
+    background: url(../img/bmw_m2.png) no-repeat;
+    height: 700px;
+    background-size: 97%;
+}
+#tutu p{
+    font-size: 30px;
+    padding-left: 73px;
+}
+h1{
+    text-align: center;
+    padding-top: 52px;
+    margin-bottom: 85px;
+}
+#pp{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 830px){
+    #tutu{
+        height: 360px;
+
+    }
+    #tutu p{
+        font-size: 22px;
+    }
+}

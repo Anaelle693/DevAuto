@@ -1,0 +1,340 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#5C5C5C;
+    margin:0;
+}
+/* HEADER */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#13090B ;
+}
+header img{
+    width:200px ;
+    height: 10vh;
+}
+header .menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4%;
+}
+li {
+    list-style:none !important;
+    color:#FFF;
+    padding:10px;
+    font-size:20px;
+    text-decoration:none;
+    }
+    nav ul {
+    /* background-color:#64abfb; */
+    padding:0;
+    margin:0;
+    }
+    nav ul li {
+    list-style: none;
+    line-height:24px;
+    float:left;
+    /* background-color:#64abfb; */
+    }
+    nav ul li a {
+    color:#CBCBCB  ;
+    padding:10px;
+    font-size:25px;
+    text-decoration:none;
+    }
+    li a:hover {
+    border-bottom:3px #0F758C solid;
+    color: #f1f1f1;
+    }
+    nav ul li a .fas{
+    color:#9F0011 ;
+    }
+    nav ul li ul { display:none; } /* Rend le menu déroulant caché par défaut */
+    nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+    z-index:99999;
+    display:list-item !important;
+    position:absolute;
+    margin-top:14px;
+    margin-left:-10px;
+    list-style-type: none;
+    }
+    nav ul li:hover ul li {
+    float:none;
+    background-color: #13090B;
+    }
+    nav ul li:hover ul li a{
+    color: #f1f1f1 ;
+    padding-bottom: 3%;
+    font-size: 25px;
+    }
+.fas{
+    color: #f1f1f1;
+    padding-left: 10px;
+}
+/* MAIN - INDEX */
+.container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container .presentation h1,.container .presentation h2{
+    text-align: center;
+}
+.container .presentation h1{
+    font-size: 30px;
+    margin-top: 2em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.container h2{
+    padding: 2em;
+}
+.container .choix_voitures{
+    display: flex;
+    align-items: baseline;
+}
+.container .choix_voitures .audi, .container .choix_voitures .bmw,.container .choix_voitures .citroen{
+    text-align: center;
+    padding-bottom: 4%;
+}
+.container .choix_voitures .audi img,.container .choix_voitures .bmw img,.container .choix_voitures .citroen img{
+    width: 200px;
+}
+.container .choix_voitures p{
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+.container>.choix_voitures>.audi>button,
+.container>.choix_voitures>.bmw>button,
+.container>.choix_voitures>.citroen>button{
+    background-color: #0F758C;
+    border: none;
+    padding: 2%;
+    width: 180px;
+}
+.container>.choix_voitures>.audi>button:hover,
+.container>.choix_voitures>.bmw>button:hover,
+.container>.choix_voitures>.citroen>button:hover{
+    animation: 3s alternate h-grow;
+    box-shadow: 2px 3px 4px #13090B;
+}
+@keyframes h-grow {
+    from { transform: translateY(50%); }
+    to   { transform: translateY(0); }
+  }
+.container .choix_voitures a{
+    margin-top:10px;
+    text-decoration: none;
+    padding:3%;
+    color: #f1f1f1;
+    width: 100%;
+}
+.container>.pays>img{
+    width: 100%;
+    height: 80vh;
+}
+/* MAIN - AUDI - BMW - CITROEN */
+.container img{
+    width: 600px;
+}
+.container .voiture{
+    display:flex;
+    /* flex-wrap: wrap; */
+    align-items: baseline;
+}
+.container .logo{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.container .logo_bmw{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.container .logo_bmw img{
+    width:200px;
+}
+.container .logo_citroen img{
+    width: 400px;
+}
+.container .logo img{
+    width: 250px;
+}
+.container .voiture .voiture_1_audi img,
+.container .voiture .voiture_2_audi img{
+    width: 200px;
+}
+.container .voiture .voiture_1_audi,
+.container .voiture .voiture_2_audi,
+.container .voiture .voiture_3_audi,
+.container .voiture .voiture_3_bmw{
+    text-align: center;
+    padding-bottom: 34px;
+}
+.container .voiture .voiture_2_citroen,
+.container .voiture .voiture_3_citroen{
+    text-align: center;
+}
+.container .voiture .voiture_3_audi img{
+    width: 150px;
+}
+.container .voiture .voiture_3_bmw img{
+    width: 200px;
+}
+.container .voiture .voiture_2_citroen img{
+    width: 250px;
+}
+.container .voiture .voiture_3_citroen img{
+    width: 250px;
+}
+
+.container .voiture .voiture_1,
+.container .voiture .voiture_2,
+.container .voiture .voiture_3{
+    text-align: center;
+    padding-bottom: 4%;
+}
+.container>.voiture>.voiture_1_audi>button,
+.container>.voiture>.voiture_2_audi>button,
+.container>.voiture>.voiture_3_audi>button,
+.container>.voiture>.voiture_3_bmw>button,
+.container>.voiture>.voiture_2_citroen>button,
+.container>.voiture>.voiture_3_citroen>button{
+    border:none;
+    padding:3%;
+    background-color:#0F758C;
+}
+.container>.voiture>.voiture_1_audi>button:hover,
+.container>.voiture>.voiture_2_audi>button:hover,
+.container>.voiture>.voiture_3_audi>button:hover,
+.container>.voiture>.voiture_3_bmw>button:hover,
+.container>.voiture>.voiture_2_citroen>button:hover,
+.container>.voiture>.voiture_3_citroen>button:hover{
+    animation: 3s alternate h-grow;
+    box-shadow: 2px 3px 4px #13090B;
+}
+@keyframes h-grow {
+    from { transform: translateY(50%); }
+    to   { transform: translateY(0); }
+  }
+.container .voiture button a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/* FOOTER */
+footer{
+    background-color: #13090B;
+    color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:1%;
+}
+footer #reseau_sociaux .fab{
+    padding: 2em;
+    font-size: 30px;
+}
+footer #reseau_sociaux .fab:hover{
+    color: #0F758C;
+    cursor: pointer;
+}
+footer #reseau_sociaux nav{
+    text-align: center;
+}
+footer #contact .navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer #contact .navigation a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+footer #contact .navigation a:hover{
+    color:#0F758C;
+}
+footer p{
+    text-align: center;
+    color:#C7C7C7;
+    padding-top: 2em;
+}
+
+/* RESPONSIVE */    
+@media screen and (max-width: 830px){
+    /* INDEX */
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header img{
+        height: 50%;
+    }
+    header .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu nav{
+        padding-bottom: 1em;
+    }
+    header>.menu>nav>ul>li>ul>li>a{
+        font-size: 18px;
+    }
+    header form{
+        padding-bottom: 1em;
+    }
+    header form input{
+        width: 300px;
+    }
+    .container .choix_voitures{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    /* MAIN - AUDI - BMW - CITROEN */
+    .container .voiture{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    /* CONTACT */
+    section {
+        border: none !important;
+    }
+    /* FOOTER */
+    footer #reseau_sociaux nav .fab{
+        padding: 15px 10px 10px 10px;
+
+    }
+   
+}
+
+@media screen and (min-width: 701px) and (max-width:1020px){
+    /* INDEX */
+    header>img{
+        width:10%;
+    }
+    header>.menu>nav{
+        margin-bottom:10px;
+    }
+    /* CITROEN */
+    .container .voiture{
+        display: flex;
+        align-items: baseline;
+    }
+    .container .voiture .citroen img,
+    .container .voiture .voiture_3_citroen img{
+        width:250px;
+    }
+    .container .voiture .citroen1 img{
+        width: 170px;
+    }
+    
+}
