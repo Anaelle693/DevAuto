@@ -19,7 +19,7 @@ h1{
 }
 @media screen and (max-width:470px){
     #tutu{
-        height:230px;
+        height:210px;
     }
    #tutu p{
         padding-top: 206px;
